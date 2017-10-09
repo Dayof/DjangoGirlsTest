@@ -25,6 +25,7 @@ The first command start the project and the second create a module to act like a
 '''
 $ django-admin startproject proj .
 $ python manage.py startapp blog
+$ python manage.py createsuperuser
 '''
 
 ## Database
