@@ -1,22 +1,24 @@
 # DjangoGirls Tutorial
 
-Blog app from django girls tutorial.
+Blog app from Django girls tutorial.
 
-## Start VE
+## Configuration
+
+### Start VE
 
 '''
 $ python3 -m venv venv
 $ source venv/bin/activate
 '''
 
-## Install basic env
+### Install basic environment
 
 '''
 $ pip install --upgrade pip
 $ pip install django~=1.9.0
 '''
 
-## Start Django project
+### Start Django project
 
 The first command start the project and the second create a module to act like a blog.
 
@@ -25,7 +27,15 @@ $ django-admin startproject proj .
 $ python manage.py startapp blog
 '''
 
-## Update database
+## Database
+
+### Create
+
+'''
+$ python manage.py makemigrations blog
+'''
+
+### Update database
 
 '''
 $ python manage.py migrate
